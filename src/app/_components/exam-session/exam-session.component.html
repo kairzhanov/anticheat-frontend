@@ -1,0 +1,26 @@
+<div class="container">
+    <!-- <h2>Exam ({{ exam.title }})</h2> -->
+
+    <p>Exam started!</p>
+    <p>To finish exam press button below</p>
+    <a (click)="finishExam()" class="btn btn-primary">Finish</a>
+</div>
+
+<div class="container">
+    <div class="canvas-wrapper">
+      <canvas  #canvas  id="output"></canvas>
+      <video id="video" #videoCamera playsinline style="
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        visibility: hidden;
+        width: auto;
+        height: auto;
+        ">
+      </video>
+    </div>
+    <div id="scatter-gl-container"></div>
+  </div>
+  <div class="container">
+    <p id="faceStatus" #faceStatus>Person is looking at the display.</p>
+    <!-- <p id="object-status">Everything is okay</p> -->
+  </div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Exam Attempts</h2>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <!-- <th scope="col">Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let session of examSessions; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{ session.start_date | date: 'short' }}</td>
+            <td>{{ session.end_date | date: 'short' }}</td>
+            <!-- <td>{{ exam.duration }} min</td> -->
+            <!-- <td> <a *ngIf="isStudent()" routerLink="/exam/{{ exam._id }}/start">Start</a></td> -->
+          </tr>
+        </tbody>
+      </table>
+</div>

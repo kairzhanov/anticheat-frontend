@@ -1,0 +1,12 @@
+p.countdown {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.shown {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

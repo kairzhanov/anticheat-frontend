@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
+    "@tensorflow-models/coco-ssd": "^2.0.3",
     "@tensorflow-models/facemesh": "0.0.3",
     "@tensorflow/tfjs-backend-wasm": "^1.7.4",
     "@tensorflow/tfjs-converter": "^1.7.4",

@@ -70,6 +70,7 @@ export class ExamSessionComponent implements OnInit {
         this.updateTime();
       } else {
         this.timeLeft = this.duration;
+        this.finishExam();
       }
     }, 1000);
   }
@@ -268,5 +269,4 @@ export class ExamSessionComponent implements OnInit {
       this.router.navigate(['/']);
     });
   }
-
 }

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://anticheat-backend.herokuapp.com:8080/api"
+  apiUrl: process.env.API_URL || "https://anticheat-backend.herokuapp.com/api"
 };
